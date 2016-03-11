@@ -21,7 +21,7 @@ class Graph():
                 subgraph_nodes = [subgraph_nodes, this_edge_nodes]
                 subgraph_nodes = set(subgraph_nodes)
                 
-        subgraph = structures.Graph(subgraph_nodes, subgraph_edges)
+        subgraph = Graph(subgraph_nodes, subgraph_edges)
         return subgraph
         
 class Edge():

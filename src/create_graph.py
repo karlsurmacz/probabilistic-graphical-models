@@ -4,7 +4,7 @@ Created on Thu Mar 10 19:04:47 2016
 
 @author: karl.surmacz
 """
-import structures
+import probabilisticgraphicalmodels.src.structures as structures
 
 if __name__ == "__main__":
     node_1 = structures.Node("A")

@@ -6,7 +6,7 @@ Created on Fri Mar 11 08:04:46 2016
 """
 
 import unittest
-from probabilisticgraphicalmodels import structures
+from probabilisticgraphicalmodels.src import structures
 
 class StructuresTestCase(unittest.TestCase):
     """Tests for 'structures.py'."""
