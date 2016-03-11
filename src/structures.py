@@ -10,6 +10,20 @@ class Graph():
         self.nodes = nodes
         self.edges = edges
         
+    def create_induced_subgraph(self, nodes):
+        import sets        
+        subgraph_edges = []   
+        subgraph_nodes = [];
+        for graph_edge in self.edges:
+            this_edge_nodes = [graph_edge.start_node, graph_edge.finish_node]          
+            if set(this_edge_nodes) == set(nodes):
+                subgraph_edges = [subgraph_edges, graph_edge]    
+                subgraph_nodes = [subgraph_nodes, this_edge_nodes]
+                subgraph_nodes = set(subgraph_nodes)
+                
+        subgraph = structures.Graph(subgraph_nodes, subgraph_edges)
+        return subgraph
+        
 class Edge():
     def __init__(self, start_node, finish_node, is_two_way):
         self.start_node = start_node
